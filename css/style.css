@@ -1,0 +1,354 @@
+.navbar-expand-lg {
+  margin-top: 30px;
+ }
+ .navbar-nav .nav-link {
+     font-family: "Gothic A1", sans-serif;
+     font-weight: 900;
+     color: #451400;
+     text-transform: uppercase;
+     word-spacing: 100%;
+   }
+ 
+ .logo {
+   width: 80px;
+   cursor: pointer;
+ }
+ 
+ .navbar-nav .nav-link {
+     margin-right: 20px; 
+     transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+ }
+ 
+ .navbar-order-now {
+   font-family: "Nunito", sans-serif;
+   font-optical-sizing: auto;
+   font-weight: 700;
+   font-style: normal;
+   color: #451400;
+   text-transform: uppercase;
+   margin-right: 50px;
+   cursor:pointer;
+ 
+   }
+ 
+   .navbar-locate {
+     font-family: "Nunito", sans-serif;
+     font-optical-sizing: auto;
+     font-weight: 600;
+     font-style: normal;
+     color: #79635a;
+     text-transform: uppercase;
+     margin-right: 40px;
+     cursor: pointer;
+     }
+ 
+   .navbar {
+     position: relative;
+     background-color: #ffffff; 
+ }
+
+ .menu-rectangulo:hover {
+  border: 2px solid #ad2118;
+  color: #ad2118; 
+  
+}
+ 
+ .navbar::after {
+     content: '';
+     position: absolute;
+     left: 0;
+     bottom: -1px; /* Ajusta según el grosor del borde degradado */
+     width: 100%;
+     height: 3px; /* Grosor del borde degradado */
+     background: linear-gradient(to bottom, lightgray, white); 
+     z-index: 1;
+ }
+ 
+ #hero {
+   min-height: 100vh;
+   position: relative;
+ }
+ 
+ video {
+   position: absolute;
+   top: 100px;
+   left: 0;
+   width: 100%;
+   height: 70%;
+   object-fit: cover;
+ }
+ 
+ .capa {
+   position: absolute;
+   top: 100px;
+   left: 0;
+   width: 100%;
+   height: 70%;
+   background: #1c1c1d;
+   opacity: 0.45;
+ }
+ 
+ .promo {
+   font-family: "Nunito", sans-serif;
+   font-size: 18px;
+   font-weight: 900;
+   display: flex;
+   flex-direction: column;
+   justify-content: left;
+   align-items: left;
+   width: 25%;
+   margin-top: 110px;
+   margin-left: 200px;
+   position: relative;
+   z-index: 2;
+   color: white;
+   line-height: 0.95;
+   box-sizing: border-box;
+   flex-direction: column;
+ }
+ 
+ .promo h1 {
+   font-size: 60px;
+   font-weight: bolder;
+   line-height: 1;
+ }
+ 
+ .button-order-now {
+   border-style: none;
+   background-color: #ad2118;
+   color: white;
+   font-family: "Gothic A1", sans-serif;
+   font-weight: bold;
+   padding: 17px;
+   width: 100%;
+   font-size: 16px;
+ }
+
+ .button-order-now:hover {
+  border-style: solid;
+  border-color: white;
+  border-width: 2px;
+}
+ 
+ h2.debajo-video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 5vh;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.button-create-account {
+  background-color: white;
+  font-family: "Gothic A1", sans-serif;
+  font-weight: bold;
+  color: #451400;
+  border-color: #451400;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.button-create-account:hover {
+  border-style: solid;
+  border-color: #ad2118;
+}
+
+.button-sign-in {
+  margin-left: 10px;
+  background-color: white;
+  font-family: "Gothic A1", sans-serif;
+  font-weight: bold;
+  border-style: none;
+  text-decoration: underline;
+  color: #976c17;
+}
+
+.button-sign-in:hover {
+  border-style: solid;
+  border-color: #ad2118;
+}
+
+.or {
+  margin-top: 10px;
+}
+
+.linea-horizontal {
+  border-bottom: 1px solid lightgray;
+  width: 100%;
+  position: absolute;
+  bottom: 30px;
+}
+
+.card-title {
+  font-family: "Gothic A1", sans-serif;
+  font-size: 28px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #451400;
+}
+
+.card-text {
+  color: #451400;
+  font-family: "Gothic A1", sans-serif;
+  margin-top: 50px;
+  font-weight: 600;
+}
+
+.button-order-now-card {
+  border-style: none;
+   background-color: #451400;
+   color: white;
+   font-family: "Gothic A1", sans-serif;
+   font-weight: bold;
+   padding: 17px;
+   width: 80%;
+   font-size: 16px;
+}
+
+.button-order-now-card:hover {
+  border-style: solid;
+  border-color: #ad2118;
+  border-width: 2px;
+  background-color: #812602;
+}
+
+.d-flex-container {
+  margin-top: -100px;
+  margin-bottom: 50px;
+}
+
+h5 {
+  cursor: pointer;
+}
+
+ @media screen and (max-width: 1200px) {
+  .promo {
+    width: 60%; 
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; 
+  }
+}
+
+ @media screen and (max-width: 991px) {
+  .promo {
+    width: 60%; 
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; 
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .promo {
+    width: 75%; 
+  }
+}
+
+/*media query para h2*/
+@media screen and (max-width: 991px) {
+  h2.debajo-video {
+      flex-direction: column; 
+      align-items: center;
+      text-align: center;
+      margin-bottom: -70px;  
+      .linea-horizontal {
+          bottom: -50px; 
+      }
+  }
+}
+
+@media screen and (max-width: 720px) {
+  h2.debajo-video {
+      margin-top: 5px;
+  }
+  .linea-horizontal {
+      bottom: -60px; 
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1140px;
+    flex-direction: column; 
+    align-items: center; 
+    flex-wrap: wrap;
+  }
+
+  .cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+  }
+
+  .card {
+    width: calc(100% - 40px);
+    margin-bottom: 20px;
+  }
+
+  .custom-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 5px;
+  }
+}
+
+/* STYLE PARA PAGINA DE MENU*/
+
+
+.card-title-imagen-grande {
+  font-size: 50px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 900;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-top: 150px;
+  margin-left: 400px;
+}
+
+.card-text-imagen-grande {
+  font-size: 20px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+}
+
+.card-img-overlay {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .card-title-imagen-grande {
+      font-size: 30px;
+      width: 80%;
+      margin-top: 50px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  
+  .card-text-imagen-grande {
+      font-size: 16px;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+  }
+}
+
+.card-img-top-custom {
+  max-height: 400px; /* Define la altura máxima que deseas para las imágenes */
+  object-fit: cover; /* Ajusta la imagen para que cubra todo el contenedor manteniendo su relación de aspecto */
+}
+
+
+
+
+
